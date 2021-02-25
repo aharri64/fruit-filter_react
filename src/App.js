@@ -1,23 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import FruitContainer from './components/FruitContainer'
 
 function App() {
+  const fruits = ['banana 🍌', 'watermelon ', 'cherry :cherries:', 'guava', 'apple :apple:', 'kiwi :kiwifruit:', 'strawberry :strawberry:', 'mango :mango:', 'pineapple :pineapple:', 'avocado :avocado:'];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Fruit Filter</h1>
+      <p><FruitContainer fruits={fruits}/></p>
     </div>
   );
 }
